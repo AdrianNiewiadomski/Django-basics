@@ -11,7 +11,7 @@ Install requirements with:
 ## To create a project use command:
 > django-admin startproject <project_name>
 
-## To start a deployment server, enter your project folder and use the following command:
+## To start a development server, enter your project folder and use the following command:
 > python manage.py runserver
  
 ## To add an app to your project use:
