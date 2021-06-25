@@ -18,5 +18,6 @@ from django.urls import path, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    # Add paths to be routed to your apps here.
     path("my_app/", include("my_first_app.urls"))
 ]
