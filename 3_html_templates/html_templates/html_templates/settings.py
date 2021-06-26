@@ -32,7 +32,7 @@ ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
     # In order for Django to look for HTML file templates in our application,
-    # the application must be added to the list of installed applications.
+    # the application must be added to the list of installed applications:
     'mypage.apps.MypageConfig',
     'django.contrib.admin',
     'django.contrib.auth',
