@@ -1,9 +1,38 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Calculator</title>
-    </head>
-    <body>
-        <h1>This is a Calculator app</h1>
-    </body>
+<head>
+    <title>Calculator</title>
+</head>
+<body>
+<h1>This is a Calculator app</h1>
+
+<form action="">
+    <label for="value_1">First number:</label>
+    <input id="value_1" type="text" name="x" {% if x %} value="{{ x }}" {% endif %}>
+    <br><br>
+
+    <label for="op_field">Operation:</label>
+    <select id="op_field" name="op">
+        {% if op %} <option value="{{ op_name }}" selected>{{ op }}</option> {% endif %}
+        <option value="add">+</option>
+        <option value="sub">-</option>
+        <option value="mul">*</option>
+        <option value="div">/</option>
+    </select>
+    <br><br>
+
+    <label for="value_2">Second number:</label>
+    <input id="value_2" type="text" name="y" {% if y %} value="{{ y }}" {% endif %} >
+    <br><br>
+
+    <input type="submit" value="Calculate">
+</form>
+
+{% if result %}
+    <h2>
+        Result: {{ result }}
+    </h2>
+{% endif %}
+
+</body>
 </html>
